@@ -1,4 +1,4 @@
-#Arrange işlemini yap
+#Arrange işlemini yapalım
 def arrange(item, dim, min_val, max_val):
     result = []
     for i in range(dim):
