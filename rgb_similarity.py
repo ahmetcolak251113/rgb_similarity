@@ -1,3 +1,4 @@
+#Arrange işlemini yap
 def arrange(item, dim, min_val, max_val):
     result = []
     for i in range(dim):
@@ -32,7 +33,7 @@ def rgbtxtnormalized(file_path):
                 color_list.append(([r, g, b], name))
     return color_list
 
-# Kullanıcıdan RGB al
+# Kullanıcıdan RGB bilgilerini isteyelim.
 print("Please enter RGB values.")
 red = int(input("R: "))
 green = int(input("G: "))
@@ -41,10 +42,10 @@ blue = int(input("B: "))
 user_color = [red, green, blue]
 normalized_user = arrange(user_color, 3, 0, 255)
 
-# Renkleri oku
+# Renkleri okuyalım.
 color_list = rgbtxtnormalized("rgb.txt")
 
-# En yakın rengi bul
+# En yakın rengi bulalım.
 max_similarity = float("-inf")
 closest_color = ""
 
